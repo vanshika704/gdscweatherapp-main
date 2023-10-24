@@ -550,8 +550,8 @@ class _moonState extends State<moon> {
               child: Text('sunrise at 6:20 am \n sunset at 5:55pm ',
                   textAlign: TextAlign.start,
                   style: TextStyle(
-                    fontSize: 20,
                     fontWeight: FontWeight.bold,
+                    fontSize: 20,
                     color: Color.fromARGB(255, 15, 12, 12),
                   )),
               height: 200,

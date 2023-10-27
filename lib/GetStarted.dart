@@ -60,6 +60,12 @@ class GetStarted extends StatelessWidget {
               line(),
               SizedBox(height: 20.0),
               moon(),
+              SizedBox(height: 20.0),
+              icons1(),
+              SizedBox(height: 20.0),
+              icons2(),
+              SizedBox(height: 20.0),
+              icons3(),
             ],
           ),
         )),
@@ -414,7 +420,7 @@ class _feelslikeState extends State<feelslike> {
           ),
           borderRadius: BorderRadius.circular(10.0),
           color: Color.fromARGB(179, 59, 61, 61)),
-      width: 100,
+      width: 110,
       height: 100,
       child: const Text("feels like 23 degrees ",
           style: TextStyle(
@@ -557,5 +563,244 @@ class _moonState extends State<moon> {
               height: 200,
               width: 1000)
         ]));
+  }
+}
+
+class icons1 extends StatefulWidget {
+  const icons1({super.key});
+
+  @override
+  State<icons1> createState() => _icons1State();
+}
+
+class _icons1State extends State<icons1> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        child: Row(
+      children: [outdoor(), outdoor1()],
+    ));
+  }
+}
+
+class outdoor extends StatefulWidget {
+  const outdoor({super.key});
+
+  @override
+  State<outdoor> createState() => _outdoorState();
+}
+
+class _outdoorState extends State<outdoor> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10.0),
+      padding: EdgeInsets.all(10.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        color: Color.fromARGB(179, 97, 230, 223),
+      ),
+      child: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.access_alarm_outlined,
+            color: Colors.white,
+            size: 50,
+          )),
+      height: 100,
+      width: 100,
+    );
+  }
+}
+
+class outdoor1 extends StatefulWidget {
+  const outdoor1({super.key});
+
+  @override
+  State<outdoor1> createState() => _outdoor1State();
+}
+
+class _outdoor1State extends State<outdoor1> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10.0),
+      padding: EdgeInsets.all(10.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        color: Color.fromARGB(179, 32, 37, 37),
+      ),
+      child: Row(
+        children: [
+          Text(
+            "perfect timing to go out",
+            style: TextStyle(
+                fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),
+          )
+        ],
+      ),
+      height: 100,
+      width: 200,
+    );
+  }
+}
+
+class icons2 extends StatefulWidget {
+  const icons2({super.key});
+
+  @override
+  State<icons2> createState() => _icons2State();
+}
+
+class _icons2State extends State<icons2> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        children: [car1(), car()],
+      ),
+    );
+  }
+}
+
+class car1 extends StatefulWidget {
+  const car1({super.key});
+
+  @override
+  State<car1> createState() => _car1State();
+}
+
+class _car1State extends State<car1> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10.0),
+      padding: EdgeInsets.all(10.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        color: Color.fromARGB(179, 97, 230, 223),
+      ),
+      child: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.car_repair,
+            color: Colors.white,
+            size: 50,
+          )),
+      height: 100,
+      width: 100,
+    );
+  }
+}
+
+class car extends StatefulWidget {
+  const car({super.key});
+
+  @override
+  State<car> createState() => _carState();
+}
+
+class _carState extends State<car> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10.0),
+      padding: EdgeInsets.all(10.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        color: Color.fromARGB(179, 32, 37, 37),
+      ),
+      child: Row(
+        children: [
+          Text(
+            "can get car serviced",
+            style: TextStyle(
+                fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),
+          )
+        ],
+      ),
+      height: 100,
+      width: 200,
+    );
+  }
+}
+
+class icons3 extends StatefulWidget {
+  const icons3({super.key});
+
+  @override
+  State<icons3> createState() => _icons3State();
+}
+
+class _icons3State extends State<icons3> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        children: [oil1(), oil()],
+      ),
+    );
+  }
+}
+
+class oil1 extends StatefulWidget {
+  const oil1({super.key});
+
+  @override
+  State<oil1> createState() => _oil1State();
+}
+
+class _oil1State extends State<oil1> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10.0),
+      padding: EdgeInsets.all(10.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        color: Color.fromARGB(179, 97, 230, 223),
+      ),
+      child: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.diamond,
+            color: Colors.white,
+            size: 50,
+          )),
+      height: 100,
+      width: 100,
+    );
+  }
+}
+
+class oil extends StatefulWidget {
+  const oil({super.key});
+
+  @override
+  State<oil> createState() => _oilState();
+}
+
+class _oilState extends State<oil> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10.0),
+      padding: EdgeInsets.all(10.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        color: Color.fromARGB(179, 32, 37, 37),
+      ),
+      child: Row(
+        children: [
+          Text(
+            "get oil control",
+            style: TextStyle(
+                fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),
+          )
+        ],
+      ),
+      height: 100,
+      width: 200,
+    );
   }
 }

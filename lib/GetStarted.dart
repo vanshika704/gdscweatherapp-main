@@ -66,6 +66,7 @@ class GetStarted extends StatelessWidget {
               icons2(),
               SizedBox(height: 20.0),
               icons3(),
+              
             ],
           ),
         )),

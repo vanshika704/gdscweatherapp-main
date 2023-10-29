@@ -377,25 +377,30 @@ class _totalState extends State<total> {
         height: 300,
         width: 300,
         child:
-            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+           Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
+            
+            children: [SizedBox(
+                width: 20,
+              ),
               wind(),
-              feelslike(),
               SizedBox(
-                width: 70,
-              )
+                width: 20,
+              ),
+              feelslike(),
+              
             ],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              humidity(),
+        Row(
+           
+            children: [SizedBox(
+                width: 20,
+              ),
+              humidity(),SizedBox(
+                width: 20,
+              ),
               uv(),
-              SizedBox(
-                width: 70,
-              )
+             
             ],
           )
         ])));
@@ -426,7 +431,7 @@ class _feelslikeState extends State<feelslike> {
           style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 15, 12, 12),
+            color: Color.fromARGB(255, 15, 12, 12), 
           )),
     );
   }
@@ -452,7 +457,7 @@ class _windState extends State<wind> {
           color: Color.fromARGB(179, 59, 61, 61)),
       width: 100,
       height: 100,
-      child: const Text("wind speed /n 8km/h ",
+      child: const Text("wind speed \n 8km/h ",
           style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.bold,
@@ -487,7 +492,7 @@ class _humidityState extends State<humidity> {
       height: 100,
       width: 100,
       child: const Row(children: [
-        Text("humidity/n 57%",
+        Text("humidity\n 57%",
             style: TextStyle(
               fontSize: 10,
               fontWeight: FontWeight.bold,

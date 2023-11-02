@@ -58,6 +58,8 @@ class GetStarted extends StatelessWidget {
               SizedBox(height: 60.0),
               container1(),
               SizedBox(height: 90.0),
+              weather(),
+              SizedBox(height: 90.0),
               container2(),
               SizedBox(height: 120.0),
               air(),
@@ -195,6 +197,31 @@ class WeatherDetails extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+}
+class weather extends StatefulWidget {
+  const weather({super.key});
+
+  @override
+  State<weather> createState() => _weatherState();
+}
+
+class _weatherState extends State<weather> {
+  @override
+  Widget build(BuildContext context) {
+    return Container( width: MediaQuery.of(context).size.width * 0.8,
+      margin: EdgeInsets.symmetric(vertical: 10.0),
+      padding: EdgeInsets.all(10.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15.0),
+        color: Colors.transparent,
+      ),
+      child: Text("weather for this week", textAlign: TextAlign.start,
+            style: TextStyle(
+              color: Color.fromARGB(255, 245, 250, 250),
+              fontSize: 25.0,
+            ),),
     );
   }
 }

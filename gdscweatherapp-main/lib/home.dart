@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:gdscweatherapp/GetStarted.dart';
+
 
 class home extends StatefulWidget {
   const home({super.key});
@@ -27,6 +27,7 @@ class _homeState extends State<home> {
       children: [
         Row(children: [Text("TIME"), Text("TEMP"),Text("Symbol")]),
         Row(children: [Text("9:00"), Text("29"),Icon(Icons.sunny)],),
+         Row(children: [Text("10:00"), Text("30"),Icon(Icons.sunny)],),
       ],
     ),]
   ),  );

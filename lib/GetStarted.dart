@@ -95,7 +95,7 @@ class container1 extends StatefulWidget {
 class _container1State extends State<container1> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Container(//first container containing the weather information along with the timings
         margin: EdgeInsets.symmetric(vertical: 10.0),
         padding: EdgeInsets.all(10.0),
         decoration: BoxDecoration(

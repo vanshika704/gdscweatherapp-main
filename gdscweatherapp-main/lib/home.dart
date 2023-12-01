@@ -34,6 +34,7 @@ class _homeState extends State<home> {
             Row(children: [Text("1:00"), Text("32"),Icon(Icons.sunny)],),
             Row(children: [Text("2:00"), Text("33"),Icon(Icons.sunny)],),
             Row(children: [Text("3:00"), Text("32"),Icon(Icons.sunny)],),
+             Row(children: [Text("4:00"), Text("32"),Icon(Icons.sunny)],),
 
            
         ],

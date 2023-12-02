@@ -26,7 +26,7 @@ class _homeState extends State<home> {
     child: Stack(
       children: [Column(
         children: [
-          Row(children: [Text("TIME"), Text("TEMP"),Text("Symbol")]),
+          Row(children: [Text("TIME",style: TextStyle(fontWeight: FontWeight.bold),), Text("TEMP",style: TextStyle(fontWeight: FontWeight.bold),),Text("Symbol",style: TextStyle(fontWeight: FontWeight.bold),)]),
           Row(children: [Text("9:00"), Text("29"),Icon(Icons.sunny)],),
            Row(children: [Text("10:00"), Text("30"),Icon(Icons.sunny)],),
            Row(children: [Text("11:00"), Text("31"),Icon(Icons.sunny)],),

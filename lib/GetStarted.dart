@@ -246,7 +246,7 @@ class box extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
+      children: [//.
         week(
           day: "today",
           weather: "sunny",

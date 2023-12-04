@@ -22,18 +22,22 @@ class _homeState extends State<home> {
   backgroundColor: Colors.blue, 
 ),
 
-  body: const Stack(
-    children: [Column(
-      children: [
-        Row(children: [Text("TIME"), Text("TEMP"),Text("Symbol")]),
-        Row(children: [Text("9:00"), Text("29"),Icon(Icons.sunny)],),
-         Row(children: [Text("10:00"), Text("30"),Icon(Icons.sunny)],),
-         Row(children: [Text("11:00"), Text("31"),Icon(Icons.sunny)],),
-         Row(children: [Text("12:00"), Text("32"),Icon(Icons.sunny)],),
-          Row(children: [Text("1:00"), Text("32"),Icon(Icons.sunny)],),
-         
-      ],
-    ),]
+  body: const SingleChildScrollView(
+    child: Stack(
+      children: [Column(
+        children: [
+          Row(children: [Text("TIME"), Text("TEMP"),Text("Symbol")]),
+          Row(children: [Text("9:00"), Text("29"),Icon(Icons.sunny)],),
+           Row(children: [Text("10:00"), Text("30"),Icon(Icons.sunny)],),
+           Row(children: [Text("11:00"), Text("31"),Icon(Icons.sunny)],),
+           Row(children: [Text("12:00"), Text("32"),Icon(Icons.sunny)],),
+            Row(children: [Text("1:00"), Text("32"),Icon(Icons.sunny)],),
+            Row(children: [Text("2:00"), Text("33"),Icon(Icons.sunny)],),
+
+           
+        ],
+      ),]
+    ),
   ),  );
   }
 }

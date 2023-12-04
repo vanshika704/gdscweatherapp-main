@@ -484,7 +484,7 @@ class _totalState extends State<total> {
         width: 300,
         child:
             Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-          Row(
+          Row(// aditional features
             children: [
               SizedBox(
                 width: 20,

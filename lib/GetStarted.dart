@@ -56,7 +56,7 @@ class GetStarted extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),),//main calling container
               SizedBox(height: 60.0),
-              container1(),
+              container1(),// time wise weather
               SizedBox(height: 90.0),
               weather(),
               SizedBox(height: 90.0),

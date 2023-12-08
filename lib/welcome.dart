@@ -147,7 +147,7 @@ class CustomContainerTemperature extends StatelessWidget {
 
 
             child: Row(
-              children: [
+              children: [// weekly weather
                 box("today", "sunny", "30"),
                 box("tomorrow", "sunny", "31"),
                 box("fri", "partially cloudy", "27"),

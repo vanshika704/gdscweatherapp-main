@@ -28,7 +28,7 @@ class _homeState extends State<home> {
         children: [
           Row(children: [Text("TIME",style: TextStyle(fontWeight: FontWeight.bold),), Text("TEMP",style: TextStyle(fontWeight: FontWeight.bold),),Text("Symbol",style: TextStyle(fontWeight: FontWeight.bold),)]),
           Row(children: [Text("9:00",style: TextStyle(fontWeight: FontWeight.bold),), Text("29",style: TextStyle(fontWeight: FontWeight.bold),),Icon(Icons.sunny,color: Color.fromARGB(255, 252, 250, 250),)],),
-           Row(children: [Text("10:00",style: TextStyle(fontWeight: FontWeight.bold),), Text("30",style: TextStyle(fontWeight: FontWeight.bold),),Icon(Icons.sunny)],),
+           Row(children: [Text("10:00",style: TextStyle(fontWeight: FontWeight.bold),), Text("30",style: TextStyle(fontWeight: FontWeight.bold),),Icon(Icons.sunny,color: Color.fromARGB(255, 253, 252, 252),)],),
            Row(children: [Text("11:00"), Text("31"),Icon(Icons.sunny)],),
            Row(children: [Text("12:00"), Text("32"),Icon(Icons.sunny)],),
             Row(children: [Text("1:00"), Text("32"),Icon(Icons.sunny)],),

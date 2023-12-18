@@ -54,7 +54,7 @@ class GetStarted extends StatelessWidget {
                   color: Colors.black,
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
-                ),),//main calling container
+                ),),
               SizedBox(height: 60.0),
               container1(),// time wise weather
               SizedBox(height: 90.0),

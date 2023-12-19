@@ -24,7 +24,7 @@ class _homeState extends State<home> {
   body: const Stack(
     children: [Column(
       children: [
-        Row(children: [Text("TIME"), Text(""),])
+        Row(children: [Text("TIME"), Text("TEMP"),Text("Symbol")])
       ],
     ),]
   ),  );

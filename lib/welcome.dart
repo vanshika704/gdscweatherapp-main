@@ -63,7 +63,7 @@ class GetStarted extends StatelessWidget {
                 SizedBox(
                   height: height / 9,
                 ),
-                Text.rich(
+                Text.rich(//.
                     TextSpan(style: TextStyle(color: Colors.white), children: [
                   TextSpan(
                       text: "25°",

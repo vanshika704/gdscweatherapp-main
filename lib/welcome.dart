@@ -22,7 +22,7 @@ class _welcomeState extends State<welcome> {
 
 class GetStarted extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {//.
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     var devicePixelRatio = MediaQuery.of(context).devicePixelRatio;

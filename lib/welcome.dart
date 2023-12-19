@@ -14,7 +14,7 @@ class _welcomeState extends State<welcome> {
     return Scaffold(//.
       appBar: AppBar(
         title: Text('Weather App'),
-      ),//.
+      ),
     );
   }
 }

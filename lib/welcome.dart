@@ -11,7 +11,7 @@ class welcome extends StatefulWidget {
 class _welcomeState extends State<welcome> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(//.
       appBar: AppBar(
         title: Text('Weather App'),
       ),//.

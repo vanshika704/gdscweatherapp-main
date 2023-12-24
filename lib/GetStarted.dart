@@ -36,7 +36,7 @@ class GetStarted extends StatelessWidget {
         body: SingleChildScrollView(
             child: Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.05),
-          child: Column(
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
@@ -46,7 +46,7 @@ class GetStarted extends StatelessWidget {
                   fontSize: 40.0,
                 ),
               ),
-              Text("25 degrees",style: TextStyle(
+              Text("29 degrees",style: TextStyle(
                   color: Colors.white,
                   fontSize: 50.0,fontWeight: FontWeight.bold
                 ),),
@@ -96,11 +96,11 @@ class _container1State extends State<container1> {
   @override
   Widget build(BuildContext context) {
     return Container(//first container containing the weather information along with the timings
-        margin: EdgeInsets.symmetric(vertical: 10.0),
-        padding: EdgeInsets.all(10.0),
+        margin: const EdgeInsets.symmetric(vertical: 10.0),
+        padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.0),
-          color: Color.fromARGB(255, 75, 183, 226),
+          color: const Color.fromARGB(255, 75, 183, 226),
         ),
         width: MediaQuery.of(context).size.width,
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
@@ -164,8 +164,8 @@ class WeatherDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.8,
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
         color: Colors.transparent,
@@ -176,7 +176,7 @@ class WeatherDetails extends StatelessWidget {
           Text(
             time,
             textAlign: TextAlign.start,
-            style: TextStyle(
+            style: const TextStyle(
               color: Color.fromARGB(255, 243, 246, 247),
               fontSize: 20.0,
             ),
@@ -184,12 +184,12 @@ class WeatherDetails extends StatelessWidget {
           Text(
             temperature + "°",
             textAlign: TextAlign.start,
-            style: TextStyle(
+            style: const TextStyle(
               color: Color.fromARGB(255, 245, 250, 250),
               fontSize: 20.0,
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Image.asset(
             image,
             height: 30,
@@ -211,13 +211,13 @@ class _weatherState extends State<weather> {
   @override
   Widget build(BuildContext context) {
     return Container( width: MediaQuery.of(context).size.width * 0.8,
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
         color: Colors.transparent,
       ),
-      child: Text("weather for this week", textAlign: TextAlign.start,
+      child: const Text("weather for this week", textAlign: TextAlign.start,
             style: TextStyle(
               color: Color.fromARGB(255, 245, 250, 250),
               fontSize: 25.0,
@@ -236,7 +236,7 @@ class _container2State extends State<container2> {
   @override
   Widget build(BuildContext context) {
     return  Container(width: MediaQuery.of(context).size.width ,
-    color: Color.fromARGB(255, 75, 183, 226),
+    color: const Color.fromARGB(255, 75, 183, 226),
       child:box(),
 
     );
@@ -301,8 +301,8 @@ class week extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container( width: MediaQuery.of(context).size.width *0.9,
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
         color: Colors.transparent,
@@ -322,14 +322,14 @@ class week extends StatelessWidget {
             ),
         Text(
           weather,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 20.0,
           ),
         ),
         Text(
           temperature + "°",
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 20.0,
           ),
@@ -355,11 +355,11 @@ class _airState extends State<air> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.symmetric(vertical: 30.0),
-        padding: EdgeInsets.all(30.0),
+        margin: const EdgeInsets.symmetric(vertical: 30.0),
+        padding: const EdgeInsets.all(30.0),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(40.0),
-            color: Color.fromARGB(179, 247, 248, 248)),
+            color: const Color.fromARGB(179, 247, 248, 248)),
         child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -411,9 +411,9 @@ class details extends StatefulWidget {
 class _detailsState extends State<details> {
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       " Weather Details",
-      selectionColor: const Color.fromARGB(255, 13, 14, 12),
+      selectionColor: Color.fromARGB(255, 13, 14, 12),
       textScaleFactor: 2.0,
     );
   }
@@ -430,7 +430,7 @@ class _lineState extends State<line> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             color: Colors.grey,
             gradient: LinearGradient(colors: [
               Color.fromARGB(255, 235, 96, 86),
@@ -475,7 +475,7 @@ class _totalState extends State<total> {
   Widget build(BuildContext context) {
     return (Container(
         margin: const EdgeInsets.symmetric(vertical: 10.0),
-        padding: EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.0),
           color: Colors.transparent,
@@ -483,7 +483,7 @@ class _totalState extends State<total> {
         height: 300,
         width: 300,
         child:
-            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+            const Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           Row(// aditional features
             children: [
               SizedBox(
@@ -524,12 +524,12 @@ class _feelslikeState extends State<feelslike> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          image: DecorationImage(
+          image: const DecorationImage(
             image: AssetImage("assets/temp.png"),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(10.0),
-          color: Color.fromARGB(179, 59, 61, 61)),
+          color: const Color.fromARGB(179, 59, 61, 61)),
       width: 110,
       height: 100,
       child: const Text("feels like 23 degrees ",
@@ -554,12 +554,12 @@ class _windState extends State<wind> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          image: DecorationImage(
+          image: const DecorationImage(
             image: AssetImage("assets/7e37d59f6fa3f9edd77d535d26def421.jpg"),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(10.0),
-          color: Color.fromARGB(179, 59, 61, 61)),
+          color: const Color.fromARGB(179, 59, 61, 61)),
       width: 100,
       height: 100,
       child: const Text("wind speed \n 8km/h ",
@@ -583,16 +583,16 @@ class _humidityState extends State<humidity> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-        image: DecorationImage(
+        image: const DecorationImage(
           image: AssetImage(
               "assets/bigstock-Blue-Background-Of-Natural-Wat-448994423.jpg"),
           fit: BoxFit.cover,
         ),
         borderRadius: BorderRadius.circular(15.0),
-        color: Color.fromARGB(179, 248, 242, 244),
+        color: const Color.fromARGB(179, 248, 242, 244),
       ),
       height: 100,
       width: 100,
@@ -619,16 +619,16 @@ class _uvState extends State<uv> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-        image: DecorationImage(
+        image: const DecorationImage(
           image: AssetImage(
               "assets/sun-icon-clipart-vector-in-white-background-image.jpg"),
           fit: BoxFit.cover,
         ),
         borderRadius: BorderRadius.circular(15.0),
-        color: Color.fromARGB(179, 248, 242, 244),
+        color: const Color.fromARGB(179, 248, 242, 244),
       ),
       height: 100,
       width: 100,
@@ -663,7 +663,7 @@ class _moonState extends State<moon> {
         ),
         child: Column(children: [
           Container(
-              child: Center(
+              child: const Center(
                   child: Text('sunrise at 6:20 am \n sunset at 5:55pm ',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -687,7 +687,7 @@ class _icons1State extends State<icons1> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Row(
+        child: const Row(
       children: [outdoor(), outdoor1()],
     ));
   }
@@ -704,11 +704,11 @@ class _outdoorState extends State<outdoor> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
-        color: Color.fromARGB(179, 97, 230, 223),
+        color: const Color.fromARGB(179, 97, 230, 223),
       ),
       child: IconButton(
           onPressed: () {},
@@ -734,13 +734,13 @@ class _outdoor1State extends State<outdoor1> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
-        color: Color.fromARGB(179, 32, 37, 37),
+        color: const Color.fromARGB(179, 32, 37, 37),
       ),
-      child: Row(
+      child: const Row(
         children: [
           Text(
             "perfect timing to go out",
@@ -766,7 +766,7 @@ class _icons2State extends State<icons2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Row(
+      child: const Row(
         children: [car1(), car()],
       ),
     );
@@ -784,11 +784,11 @@ class _car1State extends State<car1> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
-        color: Color.fromARGB(179, 97, 230, 223),
+        color: const Color.fromARGB(179, 97, 230, 223),
       ),
       child: IconButton(
           onPressed: () {},
@@ -814,13 +814,13 @@ class _carState extends State<car> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
-        color: Color.fromARGB(179, 32, 37, 37),
+        color: const Color.fromARGB(179, 32, 37, 37),
       ),
-      child: Row(
+      child: const Row(
         children: [
           Text(
             "can get car serviced",
@@ -846,7 +846,7 @@ class _icons3State extends State<icons3> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Row(
+      child: const Row(
         children: [oil1(), oil()],
       ),
     );
@@ -864,11 +864,11 @@ class _oil1State extends State<oil1> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
-        color: Color.fromARGB(179, 97, 230, 223),
+        color: const Color.fromARGB(179, 97, 230, 223),
       ),
       child: IconButton(
           onPressed: () {},
@@ -894,13 +894,13 @@ class _oilState extends State<oil> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10.0),
-      padding: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
-        color: Color.fromARGB(179, 32, 37, 37),
+        color: const Color.fromARGB(179, 32, 37, 37),
       ),
-      child: Row(
+      child: const Row(
         children: [
           Text(
             "get oil control",

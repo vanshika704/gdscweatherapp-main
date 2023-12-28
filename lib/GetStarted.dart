@@ -5,7 +5,7 @@ class GetStarted extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
 
-    return Container(//...
+    return Container(//....
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/background.png"),

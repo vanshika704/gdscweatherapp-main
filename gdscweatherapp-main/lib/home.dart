@@ -18,8 +18,8 @@ class _homeState extends State<home> {
     style: TextStyle(color: Colors.white),
   ),
   backgroundColor: Colors.blue, 
-)
+),
 
-    );
+  body: Column(),  );
   }
 }

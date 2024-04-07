@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -13,16 +14,18 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-  title: Text(
+  title: const Text(
     "Today's Report",
     style: TextStyle(color: Colors.white),
   ),
   backgroundColor: Colors.blue, 
 ),
 
-  body: Stack(
+  body: const Stack(
     children: [Column(
-      children: [],
+      children: [
+        Row(children: [Text("TIME"), Text(""),])
+      ],
     ),]
   ),  );
   }

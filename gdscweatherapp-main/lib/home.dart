@@ -20,6 +20,10 @@ class _homeState extends State<home> {
   backgroundColor: Colors.blue, 
 ),
 
-  body: Column(),  );
+  body: Stack(
+    children: [Column(
+      children: [],
+    ),]
+  ),  );
   }
 }

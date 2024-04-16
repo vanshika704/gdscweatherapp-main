@@ -47,8 +47,8 @@ class GetStarted extends StatelessWidget {
                 ),
               ),
               Text("25 degrees",style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 50.0,
+                  color: Colors.white,
+                  fontSize: 50.0,fontWeight: FontWeight.bold
                 ),),
                 Text("wed 31/18     Air quality:83-satisfactory",style: TextStyle(
                   color: Colors.black,

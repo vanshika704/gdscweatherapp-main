@@ -131,7 +131,7 @@ class WeatherInfo extends StatelessWidget {
         ),
         WeatherDetails(
           time: "9:00 PM",
-          temperature: "27",
+          temperature: "29",
           image: ("assets/sunny.jpg"),
           imagewidth: 0.1,
           imageheight: 0.1,

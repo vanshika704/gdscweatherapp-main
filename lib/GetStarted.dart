@@ -102,7 +102,7 @@ class _container1State extends State<container1> {
         padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.0),
-          color: Color.fromARGB(104, 60, 61, 61),
+          color: Color.fromARGB(112, 75, 85, 85),
         ),
         width: MediaQuery.of(context).size.width,
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [

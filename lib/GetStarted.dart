@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class GetStarted extends StatelessWidget {
@@ -51,7 +53,7 @@ class GetStarted extends StatelessWidget {
                   fontSize: 50.0,fontWeight: FontWeight.bold
                 ),),
                 Text("wed 31/18     Air quality:83-satisfactory",style: TextStyle(
-                  color: Colors.black,
+                  color: Color.fromARGB(255, 248, 247, 247),
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                 ),),
@@ -100,7 +102,7 @@ class _container1State extends State<container1> {
         padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.0),
-          color: const Color.fromARGB(255, 75, 183, 226),
+          color: Color.fromARGB(104, 60, 61, 61),
         ),
         width: MediaQuery.of(context).size.width,
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
@@ -118,30 +120,26 @@ class WeatherInfo extends StatelessWidget {
         WeatherDetails(
           time: "Now",
           temperature: "25",
-          image: ("assets/sunny.jpg"),
-          imagewidth: 0.1,
-          imageheight: 0.1,
+          image:Icon(Icons.sunny,color: const Color.fromARGB(255, 253, 252, 252),),
+          
         ),
         WeatherDetails(
           time: "8:00 PM",
           temperature: "24",
-          image: ("assets/sunny.jpg"),
-          imagewidth: 0.1,
-          imageheight: 0.1,
+          image: Icon(Icons.sunny,color: const Color.fromARGB(255, 255, 255, 255),),
+       
         ),
         WeatherDetails(
           time: "9:00 PM",
           temperature: "29",
-          image: ("assets/sunny.jpg"),
-          imagewidth: 0.1,
-          imageheight: 0.1,
+          image: Icon(Icons.sunny,color: const Color.fromARGB(255, 252, 250, 250),),
+          
         ),
         WeatherDetails(
           time: "10:00 PM",
           temperature: "29",
-          image: ("assets/sunny.jpg"),
-          imagewidth: 0.1,
-          imageheight: 0.2,
+          image: Icon(Icons.sunny,color: const Color.fromARGB(255, 250, 248, 248),),
+          
         ),
       ],
     );
@@ -151,14 +149,13 @@ class WeatherInfo extends StatelessWidget {
 class WeatherDetails extends StatelessWidget {
   final String time;
   final String temperature;
-  final String image;
+  final Icon image;
 
-  WeatherDetails(
-      {required this.time,
-      required this.temperature,
-      required this.image,
-      required double imagewidth,
-      required double imageheight});
+  WeatherDetails({
+    required this.time,
+    required this.temperature,
+    required this.image,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -190,16 +187,13 @@ class WeatherDetails extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          Image.asset(
-            image,
-            height: 30,
-            width: 30,
-          )
+          image, 
         ],
       ),
     );
   }
 }
+
 class weather extends StatefulWidget {
   const weather({super.key});
 
@@ -217,10 +211,10 @@ class _weatherState extends State<weather> {
         borderRadius: BorderRadius.circular(15.0),
         color: Colors.transparent,
       ),
-      child: const Text("weather for this week", textAlign: TextAlign.start,
+      child: const Text("Weekly Weather", textAlign: TextAlign.start,
             style: TextStyle(
               color: Color.fromARGB(255, 245, 250, 250),
-              fontSize: 25.0,
+              fontSize: 30.0,fontWeight: FontWeight.bold
             ),),
     );
   }
@@ -236,7 +230,7 @@ class _container2State extends State<container2> {
   @override
   Widget build(BuildContext context) {
     return  Container(width: MediaQuery.of(context).size.width ,
-    color: const Color.fromARGB(255, 75, 183, 226),
+    color: Color.fromARGB(111, 62, 64, 65),
       child:box(),
 
     );
@@ -251,33 +245,25 @@ class box extends StatelessWidget {
           day: "today",
           weather: "sunny",
           temperature: "25",
-          image: ("assets/sunny.jpg"),
-          imagewidth: 0.1,
-          imageheight: 0.1,
+          icon: Icon(Icons.sunny,color: Color.fromARGB(255, 250, 250, 250),),
         ),
         week(
           day: "thur",
           weather: "thunder",
           temperature: "24",
-          image: ("assets/thunder.jpg"),
-          imagewidth: 0.1,
-          imageheight: 0.1,
+          icon: Icon(Icons.thunderstorm,color: Colors.white,),
         ),
         week(
           day: "fri",
           weather: "thunder",
           temperature: "27",
-          image: ("assets/thunder.jpg"),
-          imagewidth: 0.1,
-          imageheight: 0.1,
+          icon: Icon(Icons.thunderstorm,color: Colors.white,),
         ),
         week(
           day: "sat",
           weather: "sunny",
           temperature: "29",
-          image: ("assets/sunny.jpg"),
-          imagewidth: 0.1,
-          imageheight: 0.1,
+         icon: Icon(Icons.sunny,color: Colors.white,),
         ),
       ],
     );
@@ -288,58 +274,60 @@ class week extends StatelessWidget {
   final String day;
   final String temperature;
   final String weather;
-  final String image;
+  final Icon icon;
 
-  const week(
-      {required this.day,
-      required this.weather,
-      required this.temperature,
-      required this.image,
-      required double imagewidth,
-      required double imageheight});
+  const week({
+    required this.day,
+    required this.weather,
+    required this.temperature,
+    required this.icon,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container( width: MediaQuery.of(context).size.width *0.9,
+    return Container(
+      width: MediaQuery.of(context).size.width * 0.9,
       margin: const EdgeInsets.symmetric(vertical: 10.0),
       padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
         color: Colors.transparent,
       ),
-      child: Row(children: [
-        Container( width: MediaQuery.of(context).size.width * 0.8,
+      child: Row(
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width * 0.8,
             height: 40,
-           
-            
-            child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [Text(
-              day,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 20.0,
-              ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text(
+                  day,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+                Text(
+                  weather,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+                Text(
+                  temperature + "°",
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+                icon, // Use the icon directly
+              ],
             ),
-        Text(
-          weather,
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 20.0,
           ),
-        ),
-        Text(
-          temperature + "°",
-          style: const TextStyle(
-            color: Colors.white,
-            fontSize: 20.0,
-          ),
-        ),
-        Image.asset(
-          image,
-          height: 35,
-          width: 35,
-        )]))
-      ]),
+        ],
+      ),
     );
   }
 }
@@ -359,7 +347,7 @@ class _airState extends State<air> {
         padding: const EdgeInsets.all(30.0),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(40.0),
-            color: const Color.fromARGB(179, 247, 248, 248)),
+            color: Color.fromARGB(161, 73, 75, 75)),
         child: const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -370,7 +358,7 @@ class _airState extends State<air> {
                   softWrap: true,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 13, 14, 13),
+                    color: Color.fromARGB(255, 247, 248, 247),
                     fontSize: 20.0,
                   ),
                 ),
@@ -381,19 +369,19 @@ class _airState extends State<air> {
                   softWrap: true,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 12, 14, 3),
+                    color: Color.fromARGB(255, 250, 250, 249),
                     fontSize: 15.0,
                   ),
                 ),
               ),
               Expanded(
                 child: Text(
-                  " air index is satisfactory...",
+                  "  Satisfactory..",
                   softWrap: true,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 9, 10, 0),
-                    fontSize: 12.0,
+                    color: Color.fromARGB(255, 243, 243, 240),
+                    fontSize: 14.0,
                   ),
                 ),
               )
@@ -412,9 +400,9 @@ class _detailsState extends State<details> {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      " Weather Details",
-      selectionColor: Color.fromARGB(255, 13, 14, 12),
-      textScaleFactor: 2.0,
+      " Weather Details",style: TextStyle(color: Colors.white),
+      selectionColor: Color.fromARGB(255, 244, 245, 242),
+      textScaleFactor: 3.0,
     );
   }
 }
